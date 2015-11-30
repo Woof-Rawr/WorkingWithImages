@@ -1,15 +1,14 @@
 PImage woof;
-float scaleFactor = .5;
+PImage tree;
 
 void setup() {
   size(900, 600);
-  woof = loadImage("woof.jpg");
+  woof = loadImage("woof2.jpg");
+  tree = loadImage("tree2.jpg");
+    woof.mask(tree);
 }
 
 void draw() {
   background(0);
-  image(woof, mouseX, mouseY, woof.width*scaleFactor, woof.height*scaleFactor);
-  filter(GRAY);
-  filter(DILATE);
-  filter(ERODE);
+  image(woof, mouseX, mouse);
 }
