@@ -11,24 +11,23 @@ void setup() {
   size(800, 637);
   background(10, 0, 30);
   Moon = loadImage("eh.png");
-  Moon.resize(800, 637);
+  Moon.resize(800, 637); //added to resize picture to appropriate size
   Howl = loadImage("howling.png");
-  Howl.resize(303, 265);
+  Howl.resize(303, 265); //added to resize picture to appropriate size
   Absol = loadImage("Absol.png");
   Umbreon = loadImage("Umbreon.png");
-  Umbreon.resize(150, 150);
-  Leap = loadImage("Leap.png");
-  Leap.resize(300, 347);
+  Leap = loadImage("Leap.png");  
+  Leap.resize(300, 347);  //added to resize picture to appropriate size
   Growl = loadImage("Growl.png");
-  Growl.resize(245, 174);
+  Growl.resize(245, 174);  //added to resize picture to appropriate size
   Babe = loadImage("babe.png");
-  Babe.resize(245, 174);
+  Babe.resize(245, 174);  //added to resize picture to appropriate size
   Link = loadImage("Link.png");
-  Link.resize(333,324);
+  Link.resize(333,324);  //added to resize picture to appropriate size
 }
 
 void draw() {
-  image(Moon, 0, 0);
+  image(Moon, 0, 0); //center and background of overall picture
   image(Howl, width/3.9, height/1.7);
   image(Absol, width/1.3, 0);
   image(Growl, -5, height/15);
